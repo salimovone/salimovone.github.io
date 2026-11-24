@@ -1,0 +1,14 @@
+[
+  {
+    "target": {
+      "package_name": "com.companyname.watchtorrent",
+      "sha256_cert_fingerprints": [
+        "61:49:10:E9:F1:73:A2:FE:01:38:CA:AE:05:E6:A5:7A:7D:B0:7B:15:51:48:06:C1:BD:09:3F:3F:67:E7:0D:9A"
+      ],
+      "namespace": "android_app"
+    },
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ]
+  }
+]

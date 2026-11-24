@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="uz"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="robots" content="noindex"><title>WatchTorrent · Suhbat taklifi</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui,sans-serif;background:#151719;color:#fff}
+body{margin:0;min-height:100svh;display:grid;place-items:center}main{box-sizing:border-box;width:min(100%,26rem);padding:2rem}
+b{color:#b6ff2e}h1{font-size:2rem;margin:1rem 0}p{color:#bec1c4;line-height:1.6}
+a{display:inline-block;background:#b6ff2e;color:#18200d;font-weight:700;text-decoration:none;padding:.85rem 1.25rem;border-radius:.65rem}
+[hidden]{display:none}
+</style>
+<main><b>WatchTorrent</b><h1>Suhbat taklifi</h1><p id="hint">Taklifni ochish uchun suhbatdoshingiz yuborgan to‘liq havolani bosing.</p><a id="open" hidden>Ilovada ochish</a></main>
+<script>
+const code = location.hash.slice(1);
+if (/^[A-Za-z0-9_-]{22}$/.test(code)) {
+  const button = document.getElementById('open');
+  button.href = 'watchtorrent://join/v2/' + code;
+  button.hidden = false;
+  document.getElementById('hint').textContent = 'WatchTorrent ilovasida taklifni qabul qilishingiz mumkin.';
+}
+</script></html>
